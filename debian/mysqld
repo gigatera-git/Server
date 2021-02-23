@@ -1,0 +1,29 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides: gigatera
+# Required-Start: $remote_fs $syslog
+# Required-Stop: $remote_fs $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: mysqld initscript
+# Description: This file should be used to construct scripts to be mysqld
+# placed in /etc/init.d.
+### END INIT INFO
+
+
+case "$1" in
+        start)
+                if [ -x /usr/local/mysql/bin/mysqld_safe ]; then
+                        echo -n ' mysqld'; /usr/local/mysql/bin/mysqld_safe --datadir=/usr/local/mysql/data &
+                fi
+        ;;
+        stop)
+                pkill -9 -ef mysqld
+        ;;
+        *)
+                echo "Usage {start|stop}"
+        exit 1 ;;
+esac
+
+exit 0
