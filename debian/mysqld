@@ -15,7 +15,7 @@
 case "$1" in
         start)
                 if [ -x /usr/local/mysql/bin/mysqld_safe ]; then
-                        echo -n ' mysqld'; /usr/local/mysql/bin/mysqld_safe --user=mysql -O max_connections=500 -O wait_timeout=30 &
+                        echo -n ' mysqld'; /usr/local/mysql/bin/mysqld_safe --user=mysql --datadir=/usr/local/mysql/data &
                 fi
         ;;
         stop)
