@@ -1,0 +1,29 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides: tomcat
+# Required-Start: $remote_fs $syslog
+# Required-Stop: $remote_fs $syslog
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Description: tomcat initscript
+# Description: This file should be used to construct scripts to be tomcat
+# placed in /etc/init.d.
+### END INIT INFO
+
+
+case "$1" in
+        start)
+                if [ -x /usr/local/tomcat/bin/catalina.sh ]; then
+                        echo -n ' tomcat'; /usr/local/tomcat/bin/catalina.sh start
+                fi
+        ;;
+        stop)
+                /usr/local/tomcat/bin/catalina.sh stop
+        ;;
+        *)
+                echo "Usage {start|stop}"
+        exit 1 ;;
+esac
+
+exit 0
