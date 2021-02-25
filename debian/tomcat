@@ -11,6 +11,7 @@
 # placed in /etc/init.d.
 ### END INIT INFO
 
+export JAVA_HOME=/usr/local/java
 
 case "$1" in
         start)
