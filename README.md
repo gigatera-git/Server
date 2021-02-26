@@ -1,4 +1,10 @@
 # Server
   # Debian
-    proftpd : It is shellscript located in /etc/init.d on debian server to activate automatically whenever debian server reboot.
-              refer to mypost(http://gigatera.co.kr/wp/debian%ec%97%90-proftpd-%ec%84%a4%ec%b9%98%ed%95%98%ea%b8%b0).
+    tomcat : shellscript to start or stop
+    proftpd : shellscript to start or stop
+    mysqld : shellscript to start or stop
+    my.cnf : mysqld config file
+    my.cnf.desc : mysqld config file explanation
+    freetype-config : shellscript to config freetype
+    apache : shellscript to start or stop
+    bind9 : directory include bind9 config files
