@@ -1,0 +1,19 @@
+$TTL 43200
+@	IN	SOA	ns.gigatera.co.kr	gigatera.co.kr. (
+	2021022611  
+	28800 
+	14400
+	3600000
+	86400
+)
+
+	IN	A	192.168.0.11
+	IN	NS	ns.gigatera.co.kr.
+	IN	MX	10	mail.gigatera.co.kr.
+
+ns	IN	A	192.168.0.11
+www	IN	A	192.168.0.11
+mail	IN	A	192.168.0.11
+ftp	IN	A	192.168.0.11
+www1	IN	A	192.168.0.11
+www2	IN	A	192.168.0.11

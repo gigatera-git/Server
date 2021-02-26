@@ -1,0 +1,15 @@
+$TTL 43200 
+@ IN SOA ns.gigatera.co.kr.    gigatera.co.kr. ( 
+	2019122114 ; serial 
+	3600 ; refresh 
+	900 ; retry 
+	604800 ; expire 
+	86400 ; minimum ttl 
+) 
+
+	IN     NS	ns.gigatera.co.kr.
+
+11 IN PTR ns.gigatera.co.kr.
+11 IN PTR www.gigatera.co.kr.
+11 IN PTR mail.gigatera.co.kr.
+11 IN PTR ftp.gigatera.co.kr.
