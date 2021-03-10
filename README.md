@@ -8,3 +8,4 @@
     freetype-config : shellscript to config freetype
     apache : shellscript to start or stop
     bind9 : directory include bind9 config files
+    daily_backup.sh : backup scripts for full backup for everyday
